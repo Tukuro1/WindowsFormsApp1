@@ -18,6 +18,8 @@ namespace WindowsFormsApp1.Model
         [Key]
         public int DishNo { get; set; }
 
+        public int CategoryNo { get; set; }
+
         [Required]
         [StringLength(255)]
         public string DishName { get; set; }
