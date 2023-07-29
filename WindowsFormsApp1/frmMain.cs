@@ -23,13 +23,40 @@ namespace WindowsFormsApp1
         {
             try
             {
-               
+
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void tsmOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmOrder frmOrder = new frmOrder();
+            frmOrder.ShowDialog();
+        }
+
+        private void Thoat_click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn có muốn thoát không", "Thông báo", MessageBoxButtons.YesNo);
+            Application.Exit();
+        }
+
+        private void Logout_click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn có muốn đăng xuất không", "Thông báo", MessageBoxButtons.YesNo);
+            this.Hide();
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.ShowDialog();
+        }
+
+        private void tsmOrderlist_click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmOrderList frmOrderList = new frmOrderList();
+            frmOrderList.ShowDialog();
         }
     }
 }

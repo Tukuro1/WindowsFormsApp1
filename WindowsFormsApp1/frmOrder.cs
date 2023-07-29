@@ -42,8 +42,9 @@ namespace WindowsFormsApp1
             }
 
             lvCategory.LargeImageList = imgListCategory;
+            lvCategory.SmallImageList = imgListCategory;
 
-            foreach(var category in Global.Categories)
+            foreach (var category in Global.Categories)
             {
                 var item = lvCategory.Items.Add(category.CategoryName, category.Image);
                 item.Tag = category;
@@ -78,6 +79,13 @@ namespace WindowsFormsApp1
                 dgvDetail.Rows[rowIndex].Cells[2].Value = dish.Price;
                 dgvDetail.Rows[rowIndex].Cells[3].Value = 0;
             }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMain frmMain = new frmMain();
+            frmMain.ShowDialog();
         }
     }   
 }
