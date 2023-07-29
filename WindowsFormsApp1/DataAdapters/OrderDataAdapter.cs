@@ -35,5 +35,14 @@ namespace WindowsFormsApp1.DataAdapters
                 return query.ToList();
             }
         }
+
+        public static void CreateOrder(Order order)
+        {
+            using (var context = new Model1())
+            {
+                context.Orders.Add(order);
+                context.SaveChanges();
+            }
+        }
     }
 }

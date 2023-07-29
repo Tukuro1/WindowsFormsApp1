@@ -55,7 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connecsion.cs" />
+    <Compile Include="Business\OrderBU.cs" />
+    <Compile Include="Business\Table.cs" />
     <Compile Include="DataAdapters\OrderDataAdapter.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -93,10 +94,7 @@
     <Compile Include="Modify.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaiKhoan.cs" />
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Utility.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
