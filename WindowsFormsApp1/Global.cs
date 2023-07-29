@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp1.Business;
 using WindowsFormsApp1.Model;
 
 namespace WindowsFormsApp1
@@ -13,6 +14,7 @@ namespace WindowsFormsApp1
     {
         public static List<Staff> Staff;
         public static List<Category> Categories;
-        public static List<Dish> Dish;
+        public static List<Dish> Dishes;
+        public static List<Table> Tables;
     }
 }
